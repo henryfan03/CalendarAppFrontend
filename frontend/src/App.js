@@ -1,8 +1,17 @@
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Todo from './pages/Todo';
+
 function App() {
   return (
-    <div>
-     <h1>Hello world!!!</h1>
+    <>
+    <Router>
+    <div className='container'>
+     <Routes>
+      <Route path='/' element={<Todo />}/>
+     </Routes>
     </div>
+    </Router>
+    </>
   );
 }
 
